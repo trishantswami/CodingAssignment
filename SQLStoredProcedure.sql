@@ -1,0 +1,1 @@
+--Stored procedure  get the record which has rating <=4 CREATE PROCEDURE get_book_by_ratings @rating INTASBEGINSELECT DISTINCT b.title FROM books b INNER JOIN ratings rON b.id=r.book_id WHERE r.rating>=@ratingEND
